@@ -1,0 +1,9 @@
+# Папки
+__pycache__/
+venv/
+logs/
+users_icons/
+
+#Файлы
+secret.key
+DataBase.db
