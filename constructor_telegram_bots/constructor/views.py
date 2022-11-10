@@ -2,13 +2,15 @@ from django.core.handlers.wsgi import WSGIRequest
 from django.http import HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import HttpResponse, redirect, render
-from constructor.models import TelegramBotModel, TelegramBotLogModel, TelegramBotCommandModel
-import global_decorators as GlobalDecorators
-import global_variable as GlobalVariable
-from telegram_bot import TelegramBot
+
 from threading import Thread
 
 # Create your views here.
+from constructor_telegram_bots.constructor.models import TelegramBotModel, TelegramBotCommandModel, TelegramBotLogModel
+from constructor_telegram_bots.telegram_bot import TelegramBot
+import global_decorators as GlobalDecorators
+import global_variable as GlobalVariable
+
 @GlobalDecorators.get_navbar_data
 def get_bots_data(request: WSGIRequest, data: dict):
 	data.update(

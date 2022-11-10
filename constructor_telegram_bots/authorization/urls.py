@@ -1,5 +1,5 @@
 from django.urls import path
-from authorization.views import *
+from constructor_telegram_bots.authorization.views import authorization_page, authorize_in_account
 
 urlpatterns = [
 	path('authorization/', authorization_page),

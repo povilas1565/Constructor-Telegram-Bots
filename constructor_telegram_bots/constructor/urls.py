@@ -1,5 +1,8 @@
 from django.urls import path
-from constructor.views import *
+
+from constructor_telegram_bots.constructor.views import main_constructor_page, delete_bot, add_bot_page, add_bot, \
+	view_bot_page, save_bot_settings, start_bot, stop_bot, clear_bot_logs, get_bot_logs, add_bot_command_page, \
+	add_bot_command, view_bot_command_page, save_bot_command, delete_bot_command
 
 urlpatterns = [
 	path('', main_constructor_page),

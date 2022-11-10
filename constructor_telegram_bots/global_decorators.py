@@ -2,10 +2,11 @@ from django.core.handlers.wsgi import WSGIRequest
 from django.http import HttpResponseBadRequest
 from django.shortcuts import redirect
 from django.contrib.auth.models import Group
-from constructor.models import TelegramBotModel, TelegramBotCommandModel
 import json
+from constructor_telegram_bots.constructor.models import TelegramBotModel, TelegramBotCommandModel
 
-def get_navbar_data(func): # Функция для получения данных для NavBar'а 
+
+def get_navbar_data(func): # Функция для получения данных для NavBar'а
 	def wrapper(*args, **kwargs):
 		request: WSGIRequest = args[0]
 

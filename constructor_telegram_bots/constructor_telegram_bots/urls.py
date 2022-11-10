@@ -17,9 +17,9 @@ Including another URLconf
 from django.db.utils import OperationalError
 from django.contrib import admin
 from django.urls import path, include
-from constructor.models import TelegramBotModel
-from telegram_bot import TelegramBot
 from threading import Thread
+from constructor_telegram_bots.constructor.models import TelegramBotModel
+from constructor_telegram_bots.telegram_bot import TelegramBot
 
 urlpatterns = [
 	path('admin/', admin.site.urls),
