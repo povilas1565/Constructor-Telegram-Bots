@@ -1,6 +1,16 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="Annotator" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CssInvalidPseudoSelector" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="DefaultFileTemplate" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="CHECK_FILE_HEADER" value="true" />
+      <option name="CHECK_TRY_CATCH_SECTION" value="true" />
+      <option name="CHECK_METHOD_BODY" value="true" />
+    </inspection_tool>
+    <inspection_tool class="DjangoUnresolvedUrlInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="InjectedReferences" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
@@ -14,8 +24,12 @@
           <option value="constructor_telegram_bots.constructor.views.GlobalDecorators" />
           <option value="global_decorators" />
           <option value="global_variable" />
+          <option value="constructor_telegram_bots.registration.views.user_icon" />
+          <option value="constructor_telegram_bots.registration.views.default_user_icon" />
         </list>
       </option>
     </inspection_tool>
+    <inspection_tool class="RedundantSuppression" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SyntaxError" enabled="false" level="ERROR" enabled_by_default="false" />
   </profile>
 </component>

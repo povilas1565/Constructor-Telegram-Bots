@@ -25,6 +25,8 @@ def view_profile_page(request: WSGIRequest, username: str, data: dict): # Отр
 	)
 	return render(request, 'view_profile.html', data)
 
+
+# noinspection PyUnresolvedReferences
 @csrf_exempt
 @GlobalDecorators.if_user_authed
 def update_user_icon(request: WSGIRequest, username: str): # Обновление иконки пользователя

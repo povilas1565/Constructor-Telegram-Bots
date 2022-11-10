@@ -1,5 +1,6 @@
 from django.urls import path
-from main.views import *
+
+from constructor_telegram_bots.main.views import main_page, view_site_user_profile_page
 
 urlpatterns = [
 	path('', main_page),

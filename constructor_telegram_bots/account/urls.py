@@ -1,5 +1,6 @@
 from django.urls import path
-from account.views import *
+
+from constructor_telegram_bots.account.views import upgrade_account_page, view_profile_page, update_user_icon, sign_out
 
 urlpatterns = [
 	path('<str:username>/upgrade/', upgrade_account_page),

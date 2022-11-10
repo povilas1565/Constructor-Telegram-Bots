@@ -2,7 +2,7 @@ from django.test import TestCase, Client
 from django.contrib.auth.models import Group, User
 
 # Create your tests here.
-class KonstruktorTestCase(TestCase):
+class ConstruktorTestCase(TestCase):
 	def setUP(self):
 		self.client = Client(enforce_csrf_checks=True)
 

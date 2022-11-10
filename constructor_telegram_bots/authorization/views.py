@@ -5,8 +5,8 @@ from django.shortcuts import HttpResponse, render
 from django.contrib.auth.models import User
 from django.contrib import auth
 import global_decorators as GlobalDecorators
-
 # Create your views here.
+
 @GlobalDecorators.if_user_not_authed
 @GlobalDecorators.get_navbar_data
 def authorization_page(request: WSGIRequest, data: dict): # Отрисовка authorization.html
